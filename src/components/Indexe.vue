@@ -90,7 +90,7 @@ le retrouver rapidement .</p>
           <div class="owl-features owl-carousel">
             <div class="item">
               <div class="thumb">
-                <img :src='require("@/assets/images/featured-01.jpg")' alt="ici">
+                <img src="../assets/images/featured-01.jpg">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Sac à main perdu !! <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -105,7 +105,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/featured-02.jpg" alt="">
+                <img src="../assets/images/featured-02.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Smile In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -120,7 +120,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/featured-03.jpg" alt="">
+                <img src="../assets/images/featured-03.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Happy In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -135,7 +135,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/featured-01.jpg" alt="">
+                <img src="../assets/images/featured-01.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Walk In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -150,7 +150,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/sr/featured-01.jpg" alt="">
+                <img src="../assets/images/sr/featured-01.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Run In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -165,7 +165,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/sr/featured-02.jpg" alt="">
+                <img src="../assets/images/sr/featured-02.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Stay In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -180,7 +180,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/sr/featured-.jpg" alt="">
+                <img src="../assets/images/sr/featured-01.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Walk In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -195,7 +195,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/featured-.jpg" alt="">
+                <img src="../assets/images/featured-02.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Shoot In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>
@@ -210,7 +210,7 @@ le retrouver rapidement .</p>
             </div>
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/featured-03.jpg" alt="">
+                <img src="../assets/images/featured-03.jpg" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>Fly In The Nature <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <span>(4.5)</span></h4>

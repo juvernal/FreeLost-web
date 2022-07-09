@@ -21,13 +21,19 @@
                                 <li><a href="contest-details.html"></a></li>
                             </ul>
                         </li>
-                        <li><a href="categories.html">Annonces</a></li>
-                        <li><a href="users.jsp">Contact</a></li>
+                        <li>
+                            
+                            <a href="categories.html">Annonces</a>
+                        </li>
+                        <li>
+                            <router-link :to=" {name: 'contact'}" >Contact</router-link>
+                        </li>
                     </ul>   
+                    
                     <div class="border-button">
-                        <router-link :to="{name: 'signin'} "> Connexion</router-link>
-                     
+                        <router-link :to="{name: 'signin'}">Connexion</router-link>
                     </div>
+                   
                     <a class='menu-trigger'>
                         <span>S'inscrire</span>
                     </a>
@@ -37,14 +43,15 @@
         </div>
     </div>
   </header>
-  <div id="modal" class="popupContainer" style="display:none;">
-    <div class="popupHeader">
+  <!--<b-modal id="modal" >
+    <div id="modal" class="popupContainer" style="display:none;">
+        <div class="popupHeader">
         <span class="header_title">Login</span>
         <span class="modal_close"><i class="fa fa-times"></i></span>
     </div>
 
     <section class="popupBody">
-        <!-- Social Login -->
+         Social Login 
         <div class="social_login">
             <div class="">
                 <a href="#" class="social_box fb">
@@ -69,7 +76,7 @@
             </div>
         </div>
 
-        <!-- Username & Password Login form -->
+         Username & Password Login form 
         <div class="user_login">
             <form action="dashboard" method="post">
                 <label>Email / Username</label>
@@ -94,7 +101,7 @@
             <a href="#" class="forgot_password">Forgot password?</a>
         </div>
 
-        <!-- Register Form -->
+         Register Form 
         <div class="user_register">
             <form action="enregistrer" method="post">
                 <label>Username</label>
@@ -131,7 +138,8 @@
         
     </section>
   </div>
-    </div>
+-->
+ </div>
 </template>
 
 <script>
