@@ -5,6 +5,7 @@ import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignIn.vue'
 import SignUp from '@/views/SignUp.vue'
 import Contact from '@/views/Contact.vue'
+import Trouver from '@/views/Trouver.vue'
 
 const routes = [
   {
@@ -37,7 +38,11 @@ const routes = [
     name: 'detailsArticle',
     component: ArticleDetails
   },
-  
+  {
+    path: '/trouver',
+    name: 'trouver',
+    component: Trouver
+  },
 ]
 
 const router = createRouter({
