@@ -11,6 +11,11 @@ import { freelost } from './constante/const';
 // import './assets/logo.png'
 // import './assets/vendor/bootstrap/css/bootstrap.min.css'
 
+
+import './assets/css/market.css'
+import './assets/css/search.css'
+
+
 /* import form js */
 
 
