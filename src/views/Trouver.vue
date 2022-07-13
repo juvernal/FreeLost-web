@@ -6,7 +6,7 @@
       <div class="d-flex flex-column mt-5">
         <label class="fw-bold text-black"> Etat</label>
         <div class="d-flex ">
-          <button class="btn border rounded bg-gray m-2 w-25"> Perdu</button>
+          <button class="btn border rounded bg-grey m-2 w-25"> Perdu</button>
           <button class="btn btn border rounded text-white m-2 w-25"> Trouver</button>
         </div>
       </div>
@@ -53,6 +53,9 @@
         <label class="fw-bold text-black"> Description Detailler</label>
         <div class="d-flex ">
           <textarea class="w-100 border" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="d-flex">
+          <button class="btn border rounded bg-red m-2 w-25"> Envoyer</button>
         </div>
       </div>
     </div>
