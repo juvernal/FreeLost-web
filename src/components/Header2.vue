@@ -29,11 +29,23 @@
                             <router-link :to=" {name: 'contact'}" >Contact</router-link>
                         </li>
                     </ul>   
-                    
+                    <!--
                     <div class="border-button">
                         <router-link :to="{name: 'signin'}">Connexion</router-link>
                     </div>
+                   -->
                    
+<div class="dropdown">
+  <label class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Username
+  </label>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
                     <a class='menu-trigger'>
                         <span>S'inscrire</span>
                     </a>

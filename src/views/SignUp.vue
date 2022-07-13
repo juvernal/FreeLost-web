@@ -17,14 +17,14 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate = "Email is required">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Type your Email">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
+						<input class="input100" type="email" name="email" placeholder="Type your Email">
+						<span class="focus-input100" data-symbol="&#xf159;"></span>
 					</div>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate = "Email is required">
 						<span class="label-input100">Telephone</span>
 						<input class="input100" type="text" name="email" placeholder="Type your Phone number">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
+						<span class="focus-input100" data-symbol="&#xf2c8;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
@@ -36,12 +36,12 @@
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
 						<span class="label-input100">Confirm Password</span>
 						<input class="input100" type="password" name="pass" placeholder="Retype your password">
-						<span class="focus-input100" data-symbol="&#xf190;"></span>
+						<span class="focus-input100" data-symbol="&#xf191;"></span>
 					</div>
 					
 					<div class="text-right p-t-8 p-b-31">
 						<a href="#">
-							Forgot password?
+							
 						</a>
 					</div>
 					
