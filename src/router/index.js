@@ -5,7 +5,11 @@ import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignIn.vue'
 import SignUp from '@/views/SignUp.vue'
 import Contact from '@/views/Contact.vue'
-import Trouver from '@/views/Trouver.vue'
+
+import AnnonceView from '@/components/AnnonceView.vue'
+import DeclarationView from '@/components/DeclarationView.vue'
+
+
 
 const routes = [
   {
@@ -39,10 +43,19 @@ const routes = [
     component: ArticleDetails
   },
   {
-    path: '/trouver',
-    name: 'trouver',
-    component: Trouver
+
+    path: '/annonces',
+    name: 'AnnonceView',
+    component: AnnonceView
   },
+
+  {
+    path: '/declaration',
+    name: 'DeclarationPerte',
+    component: DeclarationView
+  },
+  
+
 ]
 
 const router = createRouter({
