@@ -71,7 +71,7 @@ le retrouver rapidement .</p>
                 <a href="/Perdu.vue"><i class="fa fa-stop"></i> J'ai perdu</a>
               </div>
               <div class="big-border-button1">
-                <a href="/Trouver.vue" target="_blank"><i class="fa fa-play"></i> J'ai trouvé</a>
+                 <router-link :to="{name: 'trouver'}">  <i class="fa fa-play">J'ai trouvé</i> </router-link>
               </div>
             </div>
           </div>

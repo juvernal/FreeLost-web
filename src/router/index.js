@@ -5,8 +5,10 @@ import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignIn.vue'
 import SignUp from '@/views/SignUp.vue'
 import Contact from '@/views/Contact.vue'
+
 import AnnonceView from '@/components/AnnonceView.vue'
 import DeclarationView from '@/components/DeclarationView.vue'
+
 
 
 const routes = [
@@ -41,6 +43,7 @@ const routes = [
     component: ArticleDetails
   },
   {
+
     path: '/annonces',
     name: 'AnnonceView',
     component: AnnonceView
@@ -52,6 +55,7 @@ const routes = [
     component: DeclarationView
   },
   
+
 ]
 
 const router = createRouter({
