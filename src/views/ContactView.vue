@@ -1,6 +1,6 @@
 <template >
+  <headerView/>
     <div class="contact">
-      <header2/>
       <!-- content -->
       <div id="" class="" style="display:none;">
 
@@ -142,14 +142,17 @@
               </section>
               </div>
               </div>
+              
               </div>
     </div>
+    <FooterViewVue/>
 </template>
 <script>
-    import Header2 from '@/components/Header2.vue'
+    import HeaderView from '@/components/HeaderView.vue'
+    import FooterViewVue from '@/components/FooterView.vue'
     export default {
         components: {
-            Header2
+            HeaderView,FooterViewVue
         }
     }
 </script>

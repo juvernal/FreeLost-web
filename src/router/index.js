@@ -1,11 +1,18 @@
-import Articles from '@/views/Articles.vue'
+import ArticlesView from '@/views/ArticlesView.vue'
 import ArticleDetails from '@/views/ArticleDetails.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignIn.vue'
 import SignUp from '@/views/SignUp.vue'
-import Contact from '@/views/Contact.vue'
-import Trouver from '@/views/Trouver.vue'
+import ContactView from '@/views/ContactView.vue'
+import HeaderView from '@/components/HeaderView.vue'
+import DeclarationView from '@/views/DeclarationView.vue'
+import AnnonceView from '@/views/AnnonceView.vue'
+
+
+
+
+
 
 const routes = [
   {
@@ -26,12 +33,12 @@ const routes = [
   {
     path: '/contact',
     name: 'contact',
-    component: Contact
+    component: ContactView
   },
   {
     path: '/articles',
     name: 'listeArticles',
-    component: Articles
+    component: ArticlesView
   },
   {
     path: '/articles/:id',
@@ -39,10 +46,21 @@ const routes = [
     component: ArticleDetails
   },
   {
-    path: '/trouver',
-    name: 'trouver',
-    component: Trouver
+    path: '/nav',
+    name: 'nav',
+    component: HeaderView
   },
+  {
+    path: '/declaration',
+    name: 'declaration',
+    component: DeclarationView
+  },
+  {
+    path: '/annonce',
+    name: 'annonce',
+    component: AnnonceView
+  },
+
 ]
 
 const router = createRouter({

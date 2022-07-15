@@ -1,5 +1,5 @@
 <template>
-	<Header2/>
+	<HeaderView />
     <div class="signin">
 	<div class="limiter">
 		<div class="container-login100">
@@ -54,17 +54,23 @@
 	<div id="dropDownSelect1"></div>
 
     </div>
+	<FooterViewVue/>
 </template>
 
 <script>
-    import Header2 from '@/components/Header2.vue'
+    import HeaderView from '@/components/HeaderView.vue'
 	import {freelost} from '@/constante/const.js'
 	import axios from 'axios'
+	import FooterViewVue from '@/components/FooterView.vue'
 
   export default {
+	/* eslint-disable */
     components: {
-      Header2
+      HeaderView,FooterViewVue
     },
+	"rules": {
+    "no-mixed-spaces-and-tabs": 0,
+  },
 	data() {
 		return{
 			user : "",
@@ -79,12 +85,19 @@
 			await axios.post(freelost+'/auth/signin',{
 				email: this.user,
 				password: this.pass
-			} ).then(rps=>{
-				this.users = rps.data
-				console.log(rps.data)
+			} ).then(response=>{
+				this.users = response.data
+				console.log(response.data)
+				localStorage.setItem('user',response.data)
+				//console.log(localStorage.getItem(user).email)
+				this.$router.push('/')
+				//localStorage.setItem('connect',true);
 			}).catch(e=>{
-				console.log(e.response.data)
-			}) 
+				//console.log(e.response.data)
+				console.log('error')
+			});
+
+			
 			
 		}
 	}

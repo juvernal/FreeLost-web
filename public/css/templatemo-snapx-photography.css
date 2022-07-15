@@ -31,7 +31,7 @@ font & reset css
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+html, body, div, span, applet, object, iframe, h1, h2, h3, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 figure, header, nav, section, article, aside, footer, figcaption {
@@ -68,7 +68,7 @@ ul, li {
   list-style: none;
 }
 
-header, nav, section, article, aside, footer, hgroup {
+header, nav, section, article, aside, hgroup {
   display: block;
 }
 
@@ -90,7 +90,7 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #2a2a2a;
@@ -1472,7 +1472,7 @@ pricing-plans
 ---------------------------------------------
 footer 
 --------------------------------------------- 
-*/
+
 
 footer.no-space {
   margin-top: 0px;
@@ -1494,7 +1494,7 @@ footer p a {
   color: #fff;
   font-weight: 500;
 }
-
+*/
 
 
 /* 

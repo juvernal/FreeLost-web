@@ -1,9 +1,8 @@
 import { createApp } from 'vue'
-import JQuery from 'jquery'
+//import JQuery from 'jquery'
 window.jQuery = window.$ = require('jquery');
 import App from './App.vue'
 import router from './router'
-import { freelost } from './constante/const';
 
 
 //import 'bootstrap/js/src/popup.js'
