@@ -88,8 +88,8 @@ le retrouver rapidement .</p>
 </template>
 
 <script>
-import HeaderView from './HeaderView.vue'
- import FooterView from '@/components/FooterView.vue'
+  import HeaderView from './HeaderView.vue'
+  import FooterView from '@/components/FooterView.vue'
 
   export default {
     components: {

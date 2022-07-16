@@ -260,12 +260,15 @@ Header Style
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
-  display: flex
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .header-area .main-nav .logo {
   margin-top: 9px;
   flex-basis: 20%;
+  flex-wrap: nowrap;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

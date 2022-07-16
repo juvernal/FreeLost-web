@@ -106,6 +106,18 @@
 </script>
 
 <style lang="css" scoped>
+
+	@import '../assets/login/animate.css';
+	@import '../assets/login/animsition.min.css';
+	@import '../assets/login/daterangepicker.css';
+	@import '../assets/login/font-awesome.min.css';
+	@import '../assets/login/hamburgers.min.css';
+	@import '../assets/login/main.css';
+	@import '../assets/login/util.css';
+	@import '../assets/login/select2.min.css';
+	@import '../assets/login/fonts/iconic/css/material-design-iconic-font.css';
+
+
 	.container-login100{
 		background-image: url('@/assets/images/banner-bg.jpg');
 	}
