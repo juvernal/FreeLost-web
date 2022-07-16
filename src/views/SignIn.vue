@@ -88,7 +88,8 @@
 			} ).then(response=>{
 				this.users = response.data
 				console.log(response.data)
-				localStorage.setItem('user',response.data)
+				localStorage.setItem('user',JSON.stringify(response.data))
+				localStorage.setItem('admin',JSON.parse(localStorage.getItem('user'))['type'])
 				//console.log(localStorage.getItem(user).email)
 				this.$router.push('/')
 				//localStorage.setItem('connect',true);

@@ -68,10 +68,10 @@
 le retrouver rapidement .</p>
             <div class="buttons">
               <div class="big-border-button">
-                <router-link :to="{name: 'declaration'}"> <i class="fa fa-stop"></i> J'ai perdu </router-link>
+                <router-link :to="{name: 'declaration'}" @click="checkConnect"> <i class="fa fa-stop"></i> J'ai perdu </router-link>
               </div>
               <div class="big-border-button1">
-                <router-link :to="{name: 'declaration'}"> <i class="fa fa-play"></i> J'ai trouvé </router-link>
+                <router-link :to="{name: 'declaration'}" @click="checkConnect"> <i class="fa fa-play"></i> J'ai trouvé </router-link>
               </div>
             </div>
           </div>
@@ -98,6 +98,12 @@ import HeaderView from './HeaderView.vue'
   data() {
     return {
     }
+  },
+  methods: {
+    checkConnect(){
+                if(!JSON.parse(localStorage.getItem('user')))
+                    this.$router.push('/connexion')
+            },
   }
   }
 

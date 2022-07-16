@@ -16,7 +16,7 @@
                                     <ul class="nav">
                                         <li><a href="/" class="active">Accueil</a></li>
                                         <li class="has-sub">
-                                            <a href="javascript:void(0)">Centre de collectes</a>
+                                            <a href="javascript:void(0)" @click="checkConnect">Centre de collectes</a>
                                             <ul class="sub-menu">
                                                 <li><a href="contests.html"></a></li>
                                                 <li><a href="contest-details.html"></a></li>
@@ -24,12 +24,16 @@
                                         </li>
                                         
                                         <li>
-                                            <router-link :to=" {name: 'annonce'}" >Objet Trouver</router-link>
+                                            <router-link :to=" {name: 'annonce'}" @click="checkConnect">Objet Trouver</router-link>
                                         </li>
                                           
                                         <li>
-                                            <router-link :to=" {name: 'contact'}" >Contact</router-link>
+                                            <router-link :to=" {name: 'contact'}" @click="checkConnect" >Contact</router-link>
                                         </li>
+                                        <li v-if="admin == 'moderateur'">
+                                            <router-link :to=" {name: 'admin'}" >Admin</router-link>
+                                        </li>
+                                        
                                     </ul>   
                                     
                                     <div class="border-button" id="connexion" v-if="!connect " >
@@ -39,7 +43,7 @@
 
                                     <div class="dropdown mt-3" v-if="connect">
                                         
-                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
+                                        <img :src="free+connect.avatar" class="rounded-circle z-depth-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
                                             style="width: 50px; height: 50px;"  alt="avatar image">
                                             <label for="username">{{ connect.username }}</label>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -69,31 +73,24 @@
 
     export default {
         methods: {
-            isconnect(){
-                if(localStorage.getItem('connect'))
-                    return true
-                else
-                    return false
-            },
-            change() {
-                if(localStorage.getItem('connect'))
-                    localStorage.setItem('connect',true) 
-                else
-                    localStorage.setItem('connect',false) 
-               
+            checkConnect(){
+                if(!JSON.parse(localStorage.getItem('user')))
+                    this.$router.push('/connexion')
             },
             deconnect() {
                 //this.change
                 
                 localStorage.removeItem('user') 
+                localStorage.removeItem('admin')
                 
                 this.$router.push('/connexion')
             }
         },
         data() {
             return {
-                connect: localStorage.getItem('user'),
-                free: "https://freelost-api.kouelab.com"
+                connect: JSON.parse(localStorage.getItem('user')),
+                free: "https://freelost-api.kouelab.com",
+                admin: localStorage.getItem('admin')
             }
         }
         

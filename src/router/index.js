@@ -8,6 +8,7 @@ import ContactView from '@/views/ContactView.vue'
 import HeaderView from '@/components/HeaderView.vue'
 import DeclarationView from '@/views/DeclarationView.vue'
 import AnnonceView from '@/views/AnnonceView.vue'
+import AdminViewVue from '../views/AdminView.vue'
 
 
 
@@ -60,7 +61,11 @@ const routes = [
     name: 'annonce',
     component: AnnonceView
   },
-
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminViewVue
+  },
 ]
 
 const router = createRouter({
