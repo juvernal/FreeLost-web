@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2 header-text">
-              <h1 style="color: green;"> LES OBJETS TROUVE DU MOMENT SUR FREELOST</h1>
+              <h1 style="color: green;"> LES OBJETS TROUVEES DU MOMENT SUR FREELOST</h1>
               <!-- <p>Si vous souhaitez<a rel="nofollow" href="" target="_blank" style = "color:green">Contactez nous</a>, ou laissez un message. Merci.</p> -->
             </div>
           </div>

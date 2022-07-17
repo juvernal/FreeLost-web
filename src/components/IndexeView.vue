@@ -64,8 +64,8 @@
   </div>
           <div class="header-text">
             <h2>Bienvenue sur  <em class="txt">FreeLost</em> / Welcome to <em class="txt">FreeLost</em></h2>
-            <p>Vous avez perdu ou retrouver un Object?, vous pouvez rapidement faire la recherche de votre objet , ou bien declarez-le  et la communauté Freelost se mobilisera pour vous aidez a
-le retrouver rapidement .</p>
+            <p>Vous avez perdu ou retrouver un Objet?, vous pouvez rapidement faire la recherche de votre objet , ou bien declarez-le  et la communauté Freelost se mobilisera pour vous aider a
+                le retrouver .</p>
             <div class="buttons">
               <div class="big-border-button">
                 <router-link :to="{name: 'declaration'}" @click="checkConnect"> <i class="fa fa-stop"></i> J'ai perdu </router-link>

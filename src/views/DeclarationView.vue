@@ -4,8 +4,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2 header-text">
-              <h2 style="color: green;">VOUS AVEZ TROUVE UN OBJET ?</h2>
-               <p>Declarez le pour aide son proprietaire à le retrouver</p>
+              <h2 style="color: green;">VOUS AVEZ TROUVER UN OBJET ?</h2>
+               <p>Declarez-le pour aider son proprietaire à le retrouver</p>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
                         </div>
 
                         <div class="mb-3">
-                          <label for="date" class="form-label">date de naissance</label>
+                          <label for="date" class="form-label">Date de naissance</label>
                           <input type="date" class="form-control" id="date" v-model="datenaiss" placeholder="date de naissance">
                         </div>
 
