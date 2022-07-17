@@ -150,9 +150,9 @@ body {
 
 .border-button a {
   font-size: 15px;
-  color: green;
+  color:  #08650e;
   background-color: transparent;
-  border: 1px solid #00bdfe;
+  border: 1px solid   #08650e;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -163,15 +163,15 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #00bdfe;
+  background-color: #08650e;
   color: #fff;
 }
 
 .main-button a {
   font-size: 15px;
   color: #fff;
-  background-color: #00bdfe;
-  border: 1px solid #00bdfe;
+  background-color:  #08650e;
+  border: 1px solid  #08650e;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -183,7 +183,7 @@ body {
 
 .main-button a:hover {
   background-color: transparent;
-  color: #00bdfe;
+  color:  green;
 }
 
 section {
@@ -715,7 +715,7 @@ section.popupBody {
 }
 
 .btn_red {
-  background: green;
+  background:  #08650e;
   color: #FFF;
 }
 
@@ -2432,7 +2432,7 @@ section.portfolio .thumb .hover-effect .content ul li a {
 }
 
 section.portfolio .thumb .hover-effect .content ul li a:hover {
-  background-color: #00bdfe;
+  background-color:  #08650e;
   color: #fff;
 }
 
@@ -2480,7 +2480,7 @@ section.contact-us .info-item a {
 }
 
 section.contact-us .info-item a:hover {
-  color: #00bdfe;
+  color: #08650e;
 }
 
 #contact {
@@ -2545,8 +2545,8 @@ section.contact-us .info-item a:hover {
 
 #contact button.orange-button:hover {
   background-color: transparent;
-  border: 1px solid #00bdfe;
-  color: #00bdfe;
+  border: 1px solid  #08650e;
+  color:  #08650e;
 }
 
 

@@ -72,7 +72,7 @@
              >
       <!-- Left -->
       <div class="me-5">
-        <span>Connectez vous au reseau de FreeLost:</span>
+        <span>Connectez vous au reseau de FreeLost</span>
       </div>
       <!-- Left -->
 
@@ -123,7 +123,7 @@
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
+            <h6 class="text-uppercase fw-bold">Produits</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px"
@@ -132,7 +132,7 @@
                 <router-link class="text-dark" :to="{name: 'home'}">Acceuil</router-link>
             </p>
             <p>
-                <router-link class="text-dark" :to="{name: 'declaration'}">declaration</router-link>
+                <router-link class="text-dark" :to="{name: 'declaration'}">Déclarations</router-link>
 
             </p>
             <p>
@@ -140,7 +140,7 @@
               <a href="/contact" class="text-dark"></a>
             </p>
             <p>
-                <router-link class="text-dark" :to="{name: 'annonce'}">Objet</router-link>
+                <router-link class="text-dark" :to="{name: 'annonce'}">Objets</router-link>
             </p>
           </div>
           <!-- Grid column -->
@@ -193,7 +193,7 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
+      © 2020 Copyright
       <a class="text-dark" href="/"
          >FreeLost.com</a
         >

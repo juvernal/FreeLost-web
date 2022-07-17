@@ -16,15 +16,12 @@
                                     <ul class="nav">
                                         <li><a href="/" class="active">Accueil</a></li>
                                         <li class="has-sub">
-                                            <a href="javascript:void(0)" @click="checkConnect">Centre de collectes</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="contests.html"></a></li>
-                                                <li><a href="contest-details.html"></a></li>
-                                            </ul>
+                                            <a href="javascript:void(0)" @click="checkConnect">Centres de collecte</a>
+                                            
                                         </li>
                                         
                                         <li>
-                                            <router-link :to=" {name: 'annonce'}" @click="checkConnect">Objet Trouver</router-link>
+                                            <router-link :to=" {name: 'annonce'}" @click="checkConnect">Objets Trouvees</router-link>
                                         </li>
                                           
                                         <li>

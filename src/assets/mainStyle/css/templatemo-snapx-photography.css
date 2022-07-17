@@ -152,7 +152,7 @@ body {
   font-size: 15px;
   color: green;
   background-color: transparent;
-  border: 1px solid #00bdfe;
+  border: 1px solid green;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -163,15 +163,15 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #00bdfe;
+  background-color: green;
   color: #fff;
 }
 
 .main-button a {
   font-size: 15px;
   color: #fff;
-  background-color: #00bdfe;
-  border: 1px solid #00bdfe;
+  background-color: green;
+  border: 1px solid green;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -183,7 +183,7 @@ body {
 
 .main-button a:hover {
   background-color: transparent;
-  color: #00bdfe;
+  color: green;
 }
 
 section {
@@ -1658,7 +1658,7 @@ Contests Page
   height: 46px;
   background-color: #fff;
   border-radius: 50%;
-  color: #00bdfe;
+  color: green;
   text-align: center;
   line-height: 46px;
   position: absolute;
@@ -2532,7 +2532,7 @@ section.contact-us .info-item a:hover {
   width: 100%;
   text-align: center;
   color: #fff;
-  background-color: #00bdfe;
+  background-color: green;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -2545,8 +2545,8 @@ section.contact-us .info-item a:hover {
 
 #contact button.orange-button:hover {
   background-color: transparent;
-  border: 1px solid #00bdfe;
-  color: #00bdfe;
+  border: 1px solid green;
+  color: green;
 }
 
 

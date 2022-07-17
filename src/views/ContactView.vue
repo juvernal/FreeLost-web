@@ -62,7 +62,7 @@
           <div class="row">
             <div class="col-lg-8 offset-lg-2 header-text">
               <h2>Vous pouvez joindre l'un de nos contacts a tout moment!</h2>
-              <p>Si vous souhaitez<a rel="nofollow" href="" target="_blank" style = "color:green">Contactez nous</a>, ou laissez un message. Merci.</p>
+              <p>Si vous souhaitez<br> <a rel="nofollow" href="" target="_blank" style = "color:green">  Contactez nous</a>, ou laissez un message, Merci.</p>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@
             <div class="col-lg-4">
               <div class="info-item">
                 <i class="fa fa-envelope" style = "background-color:#086501"></i>
-                <h4>Adresses Mails</h4>
-                <span><a href="#">info@freelost.com</a><br><a href="#">freelost@company.com</a></span>
+                <h4>Adresses Mail</h4>
+                <span><a href="#">info@freelost.com</a><br><a href="#">Freelost@company.com</a></span>
               </div>
             </div>
             <div class="col-lg-4">
