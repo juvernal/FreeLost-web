@@ -9,6 +9,7 @@ import HeaderView from '@/components/HeaderView.vue'
 import DeclarationView from '@/views/DeclarationView.vue'
 import AnnonceView from '@/views/AnnonceView.vue'
 import AdminViewVue from '../views/AdminView.vue'
+import UsersView from '@/components/UsersView.vue'
 
 
 
@@ -65,6 +66,11 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: AdminViewVue
+  },
+  {
+    path: '/usersList',
+    name: 'user',
+    component: UsersView
   },
 ]
 

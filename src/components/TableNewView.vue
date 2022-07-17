@@ -474,12 +474,25 @@
                 </tr>
                 </thead>
                 <tbody v-for="object in objects" :key="object._ID">
-                <tr v-if="object.valider != 'non'">
+                <tr v-if="object.valider != 'oui'">
                   <td>{{ object.UserNom }}</td>
                   <td>{{ object.Categorie  }}</td>
                   <td>{{ object.DatePerteObjet }}</td>
                   <td> {{ object.statut }}</td>
-                  <td>no-defined</td>
+                  <td>
+                     <a href="#" class="table-link">
+									<span class="fa-stack" >
+										<i class="fa fa-square fa-stack-2x" ></i>
+										<i class="fa lp-5 fa-check-circle-o fa-stack-1x fa-inverse" style="background-color: #228E3B;"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-ban fa-stack-1x fa-inverse" style="background-color: #DC3545;"></i>
+									</span>
+								</a>
+                  </td>
                 </tr>
                 
                 </tbody>

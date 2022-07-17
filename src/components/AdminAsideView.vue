@@ -1,9 +1,6 @@
 <template >
-    <HeaderView/>
-    <div class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper">
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <div class="adminAside">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -57,12 +54,12 @@
             </ul>
           </li>-->
           <li class="nav-item">
-            <a href="#" class="nav-link" @click="hide">
+            <router-link :to="{name: 'user'}" class="nav-link">
               <i class="nav-icon fas  fa-th"></i>
               <p>
                 Users Lists
               </p>
-            </a>
+            </router-link>
           </li>
           <!--
           <li class="nav-item has-treeview">
@@ -558,210 +555,12 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header pl-1" >
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6 " >
-            <h1 class="m-0 text-dark">Dashboard</h1>
-            </div>
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>{{ nb_objet_non_valider }}</h3>
-
-                <p> Nouvelles Declarations</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-              </div>
-              <a href="#" @click="ValiderMethod" class="small-box-footer">{{ validerString }} <i class="fas fa-arrow-circle-right  "></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>{{ nb_objet_valider }}</h3>
-
-                <p>Declarations Validées</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-check-square"></i>
-              </div>
-              <a href="#" @click="ConsulterMethod" class="small-box-footer" >{{ consulterString }} <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Declarations Rejetées</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-ban"></i>
-              </div>
-              <a href="#" class="small-box-footer">Consulter <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>Annonces</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-plus-circle"></i>
-              </div>
-              <a href="#" class="small-box-footer">Ajouter<i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          
-        </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          <section class="col-lg-7 connectedSortable">
-            
-          </section>
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          <section class="col-lg-5 connectedSortable">
-
-            
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <section class="content" v-if="consulterString == 'Reduire'">
-      <TableView />
-    </section>
-    <section class="content" v-if="validerString == 'Reduire'">
-      <TableNewView />
-    </section>
-    <section class="content" v-if="showUsers">
-      <UsersView />
-    </section>
-    <!-- /.content -->
-    </div>
-    
-
-  </div>
-</div>
 </template>
 <script>
-    import HeaderView from '../components/HeaderView.vue'
-    import axios from 'axios'
-    import TableView from '../components/TableView.vue'
-    import TableNewView from '../components/TableNewView.vue'
-    import UsersView from '../components/UsersView.vue'
 export default {
-  components: {
-    HeaderView, TableView,TableNewView,UsersView
-  },
-        methods: {
-            checkConnect(){
-                if(!JSON.parse(localStorage.getItem('user')))
-                    this.$router.push('/connexion')
-            },
-            deconnect() {
-                //this.change
-                
-                localStorage.removeItem('user') 
-                localStorage.removeItem('admin')
-                
-                this.$router.push('/connexion')
-            },
-            ConsulterMethod(){
-              if(this.consulterString == 'Consulter'){
-                this.consulterString = 'Reduire'
-                this.$router.push('/admin')
-              }else{
-                this.consulterString = 'Consulter'
-                this.$router.push('/admin')
-              }
-            },
-            ValiderMethod(){
-              if(this.validerString == 'Valider'){
-                this.validerString = 'Reduire'
-                this.$router.push('/admin')
-              }else{
-                this.validerString = 'Valider'
-                this.$router.push('/admin')
-              }
-            },
-            hide(){
-              if(this.showUsers){
-                this.showUsers = false
-              }else{
-                this.showUsers = true
-                this.validerString = 'Valider'
-                this.consulterString = 'Consulter'
-                this.$router.push('/admin')
-              }
-            },
-      
-        },
-        data() {
-            return {
-                connect: JSON.parse(localStorage.getItem('user')),
-                free: "https://freelost-api.kouelab.com",
-                admin: localStorage.getItem('admin'),
-               // consulter: false,
-                consulterString: 'Consulter',
-                validerString: 'Valider',
-                ojects: null,
-                nb_objet_valider: 0,
-                nb_objet_non_valider:0,
-                showUsers: false
-            }
-        },
-        mounted(){
-         axios.get('https://freelost-api.kouelab.com/object/all').then(response =>{
-            this.objects = response.data.objects
-            //this.nb_objet = this.objects.length
-            this.objects.forEach(objet => {
-                if(objet.valider == 'oui')
-                  this.nb_objet_valider+=1;
-
-                if(objet.valider != 'oui')
-                  this.nb_objet_non_valider+=1;
-
-              });
-         } 
-          
-          ) 
-         /* axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then(response => (this.usd = response)) */
-          
-        }
-        
-    }
-
+    
+}
 </script>
 <style scoped>
 

@@ -105,6 +105,7 @@
                 //this.change
                 
                 localStorage.removeItem('user') 
+                localStorage.removeItem('object_valide')
                 localStorage.removeItem('admin')
                 
                 this.$router.push('/connexion')
